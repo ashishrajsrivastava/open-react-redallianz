@@ -74,7 +74,7 @@ const FeaturesTiles = ({
                     Industry Experts
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                  We map the technology experts with unique skills and customize our course curriculum in a way that makes our training program very unique.
                     </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const FeaturesTiles = ({
                     Certified Trainers
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Our trainers are Microsoft Certified Trainers and are up to date with Microsoft official curriculum for different certifications in Microsoft technologies.
                     </p>
                 </div>
               </div>
@@ -115,10 +115,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Official Curriculam and Study Materials
+                    Official Curriculum
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    All our courses follow Microsoft official curriculum while keeping the most of training near real time project scenarios.
                     </p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ const FeaturesTiles = ({
                     Offline Recordings
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    All students get access to class recordings for download. Students will also get access to all study materials such lab instructions etc for further practice.
                     </p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ const FeaturesTiles = ({
                     Interview Questions
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Our courses are designed in such a way that it covers various interview oriented concepts and explanations. Should you need further help in your interview prep? We are here!
                     </p>
                 </div>
               </div>
@@ -181,10 +181,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Job Assistance and Mentorship
+                    Job Assistance
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Having many students and trainers already working in industry we get request for referral time to time. We share your profiles and help you further in such cases.
                     </p>
                 </div>
               </div>
