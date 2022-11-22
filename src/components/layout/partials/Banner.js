@@ -11,7 +11,7 @@ const Banner = ({
       {bannerOpen && (
         <div {...props} className="banner">
           <div className="banner-inner text-xxs">
-            <div className='banner-container'><a className="banner-link banner-link-white" href="https://github.com/ashishrajsrivastava" target="_blank" rel="noopener noreferrer">Access Free<span className="banner-hide-on-sm"> Trainings</span></a> <span className="banner-separator">or</span> <a className="banner-link banner-link-green" href="https://redallianz.com/" target="_blank" rel="noopener noreferrer">Check Upcoming classes</a></div>
+            <div className='banner-container'><a className="banner-link banner-link-white" href="https://github.com/empiredatasystem" target="_blank" rel="noopener noreferrer">Access Free<span className="banner-hide-on-sm"> Trainings</span></a> <span className="banner-separator">or</span> <a className="banner-link banner-link-green" href="https://redallianz.com/" target="_blank" rel="noopener noreferrer">Check Upcoming classes</a></div>
             <button className="banner-close" onClick={() => setBannerOpen(false)}>
               <span className="screen-reader">Close</span>
               <svg viewBox="0 0 16 16">
