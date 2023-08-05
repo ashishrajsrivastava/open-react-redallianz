@@ -172,7 +172,7 @@
 
 	.footer-top,
 	.footer-bottom {
-
+		color: black;
 		&.space-between {
 			display: flex;
 			justify-content: space-between;
@@ -182,7 +182,7 @@
 
 	.footer-top,
 	.footer-bottom {
-
+		color: black;
 		&.invert-order-desktop {
 
 			> *:first-child {
@@ -191,3 +191,4 @@
 		}
 	}
 }
+/* style.scss */

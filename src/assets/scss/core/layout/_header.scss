@@ -3,7 +3,7 @@
 	top: 0;
 	width: 100%;
 	z-index: 10 !important;
-	background: color-bg(header);
+	background: map-get(map-get($palette, light), 4); // Use the light palette's first variation (key 1) for the header background.
 
 	+ .site-content {
 
