@@ -86,7 +86,7 @@ const Hero = ({
           </div>
           <ReactPlayer
             id="video-modal"
-            url="https://drive.google.com/uc?id=1xR--cAoCVZx285ecJsWMoKkSNwzWn6ne"
+            url="https://drive.google.com/uc?id=1MckV1xBvoZBHS2Ji-AYF-AZg5Z23SLSD"
             controls={true}
             width="100%"
             height="504px"
