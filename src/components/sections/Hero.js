@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import ReactPlayer from 'react-player';
+import Plyr from 'plyr';
+import 'plyr/dist/plyr.css'; // Import the CSS styles for Plyr
 
 const propTypes = {
   ...SectionProps.types
@@ -23,13 +24,14 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
- // eslint-disable-next-line
-  const [videoModalActive, setVideomodalactive] = useState(false);
 
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  }   
+  // Initialize Plyr when the component mounts
+  React.useEffect(() => {
+    const player = new Plyr('#video-player', {
+      // Options for Plyr (if needed)
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+    });
+  }, []);
 
   const outerClasses = classNames(
     'hero section center-content',
@@ -74,15 +76,16 @@ const Hero = ({
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <ReactPlayer
-              id="video-modal"
-              url="https://drive.google.com/uc?id=1MckV1xBvoZBHS2Ji-AYF-AZg5Z23SLSD"
-              controls={true}
-              width="100%"
-              height="504px"
-              playing={true} // Use the "playing" prop to auto-play the video
-              onEnded={closeModal}
-            />
+            {/* Add a video element with an id for Plyr to target */}
+            <video
+              id="video-player"
+              playsInline
+              controls
+              autoPlay // Add the autoplay attribute to enable autoplay
+              poster={require('./../../assets/images/video-placeholder.jpg')} // Add the poster image for the video
+            >
+              <source src="https://drive.google.com/uc?id=1MckV1xBvoZBHS2Ji-AYF-AZg5Z23SLSD" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
