@@ -5,6 +5,7 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import ReactPlayer from 'react-player';
 
 const propTypes = {
   ...SectionProps.types
@@ -33,10 +34,12 @@ const Hero = ({
   }
 
   const closeModal = (e) => {
-    e.preventDefault();
+    if (e) {
+      e.preventDefault();
+    }
     setVideomodalactive(false);
-  }   
-
+  }
+  
   const outerClasses = classNames(
     'hero section center-content',
     topOuterDivider && 'has-top-divider',
@@ -72,34 +75,24 @@ const Hero = ({
                   <Button tag="a" color="primary" wideMobile href="https://redallianz.com/">
                     Get started
                     </Button>
-                  <Button tag="a" color="light" wideMobile href="https://youtube.com/ashishrajsrivastava/">
-                    View on Youtube
+                  <Button tag="a" color="light" wideMobile href="https://lms.redallianz.com">
+                    Explore Courses
                     </Button>
                 </ButtonGroup>
               </div>
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
           </div>
-          <Modal
+          <ReactPlayer
             id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" />
+            url="https://drive.google.com/uc?id=1xR--cAoCVZx285ecJsWMoKkSNwzWn6ne"
+            controls={true}
+            width="100%"
+            height="504px"
+            playing={true} // Use the "playing" prop to auto-play the video
+            onEnded={closeModal}
+          />
         </div>
       </div>
     </section>
