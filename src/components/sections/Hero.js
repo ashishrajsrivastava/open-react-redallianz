@@ -4,7 +4,7 @@ import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Plyr from 'plyr';
-import '../../assets/scss/_plyr.scss'; // Import the CSS styles for Plyr
+//import 'plyr/dist/plyr.css'; // Import the CSS styles for Plyr now from cdn in src/assets/scss/style.scss
 
 const propTypes = {
   ...SectionProps.types
