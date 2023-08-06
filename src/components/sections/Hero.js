@@ -27,6 +27,7 @@ const Hero = ({
 
   // Initialize Plyr when the component mounts
   React.useEffect(() => {
+    // eslint-disable-next-line
     const player = new Plyr('#video-player', {
       // Options for Plyr (if needed)
       controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
