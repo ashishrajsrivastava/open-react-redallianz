@@ -59,7 +59,7 @@ const Cta = ({
         `api/lists/${listId}/members`,
         {
           email_address: email,
-          status: 'subscribed',
+          status: 'pending',
         },
         {
           headers: {
@@ -70,7 +70,7 @@ const Cta = ({
       );
 
       if (response.data.id) {
-        toast.success('Thank you for subscribing!', {
+        toast.success('Thank you for subscribing! You shall receive a confirmation email soon!', {
           position: 'top-center',
           autoClose: 3000, // Pop-up message will close after 3 seconds
         });
