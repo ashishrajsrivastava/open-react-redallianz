@@ -10,7 +10,7 @@ module.exports = function (app) {
         '^/api': '/3.0', // Rewrite requests from /api to /3.0
       },
       onProxyRes: function (proxyRes, req, res) {
-        const allowedOrigins = ['http://localhost:3000', 'https://lms.redallianz.com']; // Replace with your frontend domains
+        const allowedOrigins = ['http://localhost:3000', 'https://redallianz.com']; // Replace with your frontend domains
         const requestOrigin = req.headers.origin;
         
         if (allowedOrigins.includes(requestOrigin)) {
