@@ -54,7 +54,8 @@ const Cta = ({
       const listId = process.env.REACT_APP_MAILCHIMP_LIST_ID; // use this for production
       //const apiKey = '641c35c0aa955340478a026ffb8c8e6a-us21'; // For testing purposes only
       //const listId = '67c7200e1a'; // for testing purposes only
-
+      console.log(apiKey);
+      console.log(listId);
       const response = await axios.post(
         `api/lists/${listId}/members`,
         {
