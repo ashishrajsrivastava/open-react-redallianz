@@ -13,8 +13,8 @@ import Home from './views/Home';
 // Call config to load the environment variables
 dotenv.config();
 
-console.log('API Key:', process.env.REACT_APP_MAILCHIMP_API_KEY);
-console.log('List ID:', process.env.REACT_APP_MAILCHIMP_LIST_ID);
+console.log('API Key:', process.env.APPSETTING_REACT_APP_MAILCHIMP_API_KEY);
+console.log('List ID:', process.env.APPSETTING_REACT_APP_MAILCHIMP_LIST_ID);
 //import ReactGA from 'react-ga';
 
 
