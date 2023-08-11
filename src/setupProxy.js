@@ -15,7 +15,7 @@ module.exports = function (app) {
         proxyReq.setHeader('Authorization', `Basic ${Buffer.from(`anystring:${apiKey}`).toString('base64')}`);
       },
       onProxyRes: function (proxyRes, req, res) {
-        const allowedOrigins = ['http://localhost:3000', 'https://redallianz.com']; // Replace with your frontend domains
+        const allowedOrigins = ['http://localhost:3000', 'https://redallianz.com', 'https://ra-web-t.azurewebsites.net/']; // Replace with your frontend domains
         const requestOrigin = req.headers.origin;
 
         if (allowedOrigins.includes(requestOrigin)) {
