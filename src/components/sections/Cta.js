@@ -49,31 +49,18 @@ const Cta = ({
   // Function to handle email subscription
   const handleSubscribe = async () => {
     try {
-      // Use Axios for the API request instead of the @mailchimp/mailchimp_marketing library
-      const apiKey = process.env.REACT_APP_MAILCHIMP_API_KEY; // use this for production
-      const listId = process.env.REACT_APP_MAILCHIMP_LIST_ID; // use this for production
-      //const apiKey = '641c35c0aa955340478a026ffb8c8e6a-us21'; // For testing purposes only
-      //const listId = '67c7200e1a'; // for testing purposes only
-      console.log(apiKey);
-      console.log(listId);
       const response = await axios.post(
-        `api/lists/${listId}/members`,
+        '/api', // Use the base URL, no need to include listId here
         {
           email_address: email,
           status: 'pending',
-        },
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Basic ${Buffer.from(`anystring:${apiKey}`).toString('base64')}`,
-          },
         }
       );
 
       if (response.data.id) {
-        toast.success('Thank you for subscribing! You shall receive a confirmation email soon!', {
+        toast.success('Thank you for subscribing! Please click on the confirmation link in your email.', {
           position: 'top-center',
-          autoClose: 3000, // Pop-up message will close after 3 seconds
+          autoClose: 3000,
         });
       } else {
         toast.error('Error subscribing. Please try again later.', {
