@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
+// eslint-disable-next-line
 import Input from '../elements/Input';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -29,6 +30,7 @@ const Cta = ({
   split,
   ...props
 }) => {
+  // eslint-disable-next-line
   const [email, setEmail] = useState('');
 
   const outerClasses = classNames(
@@ -76,8 +78,7 @@ const Cta = ({
       });
     }
   };
-
-  // Function to handle form submission
+  // eslint-disable-next-line
   const handleSubmit = (e) => {
     e.preventDefault();
 
