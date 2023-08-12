@@ -3,6 +3,7 @@ const apiKey = process.env.REACT_APP_MAILCHIMP_API_KEY; // use this for producti
 const listId = process.env.REACT_APP_MAILCHIMP_LIST_ID; // use this for production
 
 module.exports = function (app) {
+  console.log("setupProxy.js loaded");
   app.use(
     '/api',
     createProxyMiddleware({

@@ -6,6 +6,7 @@ import Input from '../elements/Input';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'; // Step 2: Import axios
+import MailchimpForm from './MailchimpForm'; // Import the MailchimpForm component
 
 const propTypes = {
   ...SectionProps.types,
@@ -99,27 +100,8 @@ const Cta = ({
             </h3>
           </div>
           <div className="cta-action">
-            <form onSubmit={handleSubmit}>
-              <Input
-                id="newsletter"
-                type="email"
-                label="Subscribe"
-                labelHidden
-                hasIcon="right"
-                placeholder="Your best email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              >
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 3.66663V12.3333H14V3.66663L8 8.33329L2 3.66663Z" stroke="#376DF9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M14 3.66663L8 8.33329L2 3.66663" stroke="#376DF9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M2.66667 3.66663L8 9.00097L13.3333 3.66663" stroke="#376DF9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Input>
-              <button type="submit" className="button button-dark button-wide-mobile button-sm">
-                Subscribe
-              </button>
-            </form>
+            {/* Use the MailchimpForm component here */}
+            <MailchimpForm />
           </div>
         </div>
       </div>
