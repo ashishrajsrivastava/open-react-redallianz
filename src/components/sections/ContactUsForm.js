@@ -2,7 +2,6 @@ import React from 'react';
 import FormLabel from '../elements/FormLabel';
 import Input from '../elements/Input';
 import Button from '../elements/Button';
-import FormHint from '../elements/FormHint';
 
 //create a contact us form using elements from the elements folder
 
