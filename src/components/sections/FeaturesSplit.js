@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'The journey started in 2013 and continues..',
+    paragraph: 'We started as a group of community leaders passionate about sharing knowledge and now we are serving customer across globe.'
   };
 
   return (
@@ -67,13 +67,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                Established Expertise
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Training, Consulting, and Product Development
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                RedAllianz has been a prominent figure in the training, consulting, and product development sphere since 2013. We specialize in custom product development, website development, mobile app development, and IT consultancy services catering to clients across the United States and India. With a diverse portfolio, we have delivered solutions in various sectors including IT, Banking, Financial Services, Insurance, Healthcare, High Tech, and Retail.
                   </p>
               </div>
               <div className={
@@ -83,7 +83,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require('./../../assets/images/helping-customer-aboutus.jpeg')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -93,13 +93,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                Long-term Partnerships
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Trusted by Fortune 500 and Government Clients
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                RedAllianz's deep heritage, expertise, and market intelligence have led to enduring partnerships with Fortune 500 and government clients. Our commitment to providing world-class professional resources has solidified these long-term relationships, securing trust in our capabilities.
                   </p>
               </div>
               <div className={
@@ -109,7 +109,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require('./../../assets/images/client-trust.jpeg')}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -119,13 +119,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                Diverse Client Base
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Working Across Verticals
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                With a diverse client base spanning multiple industries, RedAllianz brings expertise and innovation to verticals such as IT, Banking, Financial Services, Insurance, Healthcare, High Tech, and Retail. Our adaptability and experience across different sectors have established us as a trusted partner in addressing various industry-specific needs.
                   </p>
               </div>
               <div className={
@@ -135,7 +135,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require('./../../assets/images/global-company.png')}
                   alt="Features split 03"
                   width={528}
                   height={396} />

@@ -19,17 +19,17 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="#0">Contact</Link>
+          <Link to="/contactus">Contact</Link>
         </li>
         <li>
-          <Link to="#0">About us</Link>
+          <Link to="/aboutus">About us</Link>
         </li>
-        <li>
+{/*         <li>
           <Link to="#0">FAQ's</Link>
         </li>
         <li>
           <Link to="#0">Support</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
