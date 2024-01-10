@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Experience the Ultimate Learning with Industry Experts',
-    paragraph: 'Challenge your team, regardless of level, to a training platform that puts real world infrastructure first. Learn from expert instructors and prove your knowledge in Networking, Cyber Security, Cloud and Data Science.'
+    title: 'Not just technical training, build your tech team with us ',
+    paragraph: 'Challenge your team, regardless of level, to a training platform that puts real world infrastructure first. Learn from industry expert instructors while gaining hands-on experience with the latest technologies.'
   };
 
   return (
@@ -71,10 +71,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Industry Experts
+                  Technical Trainings in Cloud and DevOps
                     </h4>
                   <p className="m-0 text-sm">
-                  We map the technology experts with unique skills and customize our course curriculum in a way that makes our training program very unique.
+                  Empower your teams with our comprehensive Cloud and DevOps training programs. Led by industry experts, our courses cover the latest technologies and best practices. From introductory sessions to advanced workshops, we tailor our training to suit varying skill levels. Explore our hands-on labs and case studies that prepare professionals for real-world challenges in cloud architecture, automation, CI/CD, and more.
                     </p>
                 </div>
               </div>
@@ -93,10 +93,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Certified Trainers
+                  Consulting Services
                     </h4>
                   <p className="m-0 text-sm">
-                    Our trainers are Microsoft Certified Trainers and are up to date with Microsoft official curriculum for different certifications in Microsoft technologies.
+                  Unlock your business potential with our consulting expertise. Our seasoned consultants collaborate closely with your team to identify opportunities, optimize processes, and implement innovative solutions. From strategy development to execution, we offer tailored guidance in areas such as digital transformation, infrastructure optimization, and strategic planning.
                     </p>
                 </div>
               </div>
@@ -115,16 +115,16 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Official Curriculum
+                  Product Development
                     </h4>
                   <p className="m-0 text-sm">
-                    All our courses follow Microsoft official curriculum while keeping the most of training near real time project scenarios.
+                  Accelerate your product roadmap with our agile development practices. Collaborate with our skilled teams to conceptualize, design, and deliver cutting-edge products. Leveraging the latest technologies and iterative methodologies, we turn ideas into market-ready solutions. From MVPs to full-scale applications, we craft solutions that align with your vision and goals.
                     </p>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom">
+{/*             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -188,7 +188,7 @@ const FeaturesTiles = ({
                     </p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>

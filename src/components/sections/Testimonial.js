@@ -44,8 +44,8 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Students testimonials',
-    paragraph: 'Here are few feedback from students.'
+    title: 'Our testimonials',
+    paragraph: 'Here are few feedback from clients.'
   };
 
   return (
@@ -66,10 +66,10 @@ const Testimonial = ({
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Silika Roy</span>
+                  <span className="testimonial-item-name text-color-high">S Roy</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Azure DevOps Training</a>
+                    <a href="#0">Building on Cloud Program</a>
                   </span>
                 </div>
               </div>
@@ -96,16 +96,14 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                  I really enjoyed the course and Ashish Raj's  professional approach to presenting his material and knowledge.
-I specially thank to Daniel who arranged the program  my Mentor not only Azure Administration but also MS DBA. 
-Thank you for a great course. Great presentation style with lots of opportunities to ask questions and talk about real life examples which all made for a really enjoyable and informative course. This has more than met my expectations. A wonderfully practical course - both personally and professionally.
+                  Redallianz helped us with building our mobile app from scratch. They worked with us understanding our existing APIs, refactored them and built a mobile app that is now used by thousands of our customers. They are very professional and we are very happy with their work. We will continue to work with them on our future projects.
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Fekadu Y. Amare</span>
+                  <span className="testimonial-item-name text-color-high">Fekadu Y.</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Azure Administration Training</a>
+                    <a href="#0">Mobile Apps Development Consulting</a>
                   </span>
                 </div>
               </div>
