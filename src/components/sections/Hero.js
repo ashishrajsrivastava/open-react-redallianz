@@ -85,7 +85,7 @@ const Hero = ({
               autoPlay // Add the autoplay attribute to enable autoplay
               poster={require('./../../assets/images/video-placeholder.jpg')} // Add the poster image for the video
             >
-              <source src="https://drive.google.com/uc?id=1MckV1xBvoZBHS2Ji-AYF-AZg5Z23SLSD" type="video/mp4" />
+              <source src="https://csg996ec04df171x4281xa17.blob.core.windows.net/temp/RedAllianz_Explainer_NOW.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
