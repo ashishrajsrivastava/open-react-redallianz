@@ -73,9 +73,9 @@
   padding: 0.75rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2563eb;
+  color: #000000;
   background: #fff;
-  border: 2px solid #2563eb;
+  border: 2px solid #000000;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.08);
   cursor: pointer;
@@ -85,10 +85,10 @@
   overflow: hidden;
 }
 .connect-btn:hover, .connect-btn:focus {
-  background: #2563eb;
+  background: #000000;
   color: #fff;
   box-shadow: 0 4px 16px rgba(37,99,235,0.16);
-  border-color: #1e40af;
+  border-color: #ff0000;
 }
 // Optional: Simple ripple effect
 .connect-btn:active::after {
