@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+import Papa from 'papaparse';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -22,6 +23,26 @@ const Testimonial = ({
   pushLeft,
   ...props
 }) => {
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      const response = await fetch('/data/testimonials.csv');
+      const reader = response.body.getReader();
+      const result = await reader.read();
+      const decoder = new TextDecoder('utf-8');
+      const csv = decoder.decode(result.value);
+
+      Papa.parse(csv, {
+        header: true,
+        complete: (results) => {
+          setTestimonials(results.data);
+        },
+      });
+    };
+
+    fetchTestimonials();
+  }, []);
 
   const outerClasses = classNames(
     'testimonial section',
@@ -57,58 +78,24 @@ const Testimonial = ({
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-
-            <div className="tiles-item reveal-from-right" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                  EXCELLENT!  Ashish is truly knowledgeable and immensely helpful. He is greatly confident and clear about his statements. He   has the Karishma to make complex things make easy to understand. It was always on-time and the best thing about the class is that the links were posted each day on time, so I never had any confusions about the class. Very professional and I would definitely like to continue with this institute.  Thank you for everything!
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">S Roy</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">Building on Cloud Program</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                  By far, this is the best Azure course !!! I learned a lot from Ashish and I am getting ready to take Azure certification exams. .   As an SQL DBA, this is a perfect course to expand my career in to Azure SQL and Azure administration in general.  Course is all hands-on and trainers real time experience made the difference.  I also meet lot of students in this course with database and systems back ground want to get in to Azure cloud.  Thank you Ashish and Daniel for hosting the course. 
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Abdul Aziz</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">Azure Administration Training</a>
-                  </span>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="tiles-item">
+                <div className="tiles-item-inner">
+                  <div className="testimonial-item-content">
+                    <p className="text-sm mb-0">
+                      {testimonial.text}
+                    </p>
+                  </div>
+                  <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
+                    <span className="testimonial-item-name text-color-high">{testimonial.author}</span>
+                    <span className="text-color-low"> / </span>
+                    <span className="testimonial-item-link">
+                      <a href={testimonial.link}>{testimonial.program}</a>
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="tiles-item reveal-from-left" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                  Redallianz helped us with building our mobile app from scratch. They worked with us understanding our existing APIs, refactored them and built a mobile app that is now used by thousands of our customers. They are very professional and we are very happy with their work. We will continue to work with them on our future projects.
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Fekadu Y.</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">Mobile Apps Development Consulting</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </div>

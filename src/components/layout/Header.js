@@ -113,11 +113,8 @@ const Header = ({
                     )}>
                     <li>
                       <Link
-                      to="#0"
-                      onClick={() => {
-                        closeMenu(); // Close the menu if needed
-                        window.open('https://lms.redallianz.com', '_blank'); // Open the link in a new tab
-                      }}
+                      to="/lms"
+                      onClick={closeMenu}
                       className="button button-primary button-wide-mobile button-sm"
                       >
                       Trainings

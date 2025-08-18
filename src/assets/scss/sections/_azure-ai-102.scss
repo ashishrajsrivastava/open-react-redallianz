@@ -1,0 +1,239 @@
+// Azure AI-102 Landing Page Styles
+
+.azure-ai-102-landing {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section,
+footer.footer-cta {
+  margin: 0 auto 3rem auto;
+  padding: 3rem 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  max-width: 900px;
+}
+
+.hero-section {
+  margin-top: 100px;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: linear-gradient(90deg, #e0e7ef 0%, #f8fafc 100%);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+}
+.hero-content {
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.cta-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #1e40af;
+}
+.hero-image {
+  flex: 1 1 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video {
+  width: 480px;
+  height: 270px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  background: #e0e7ef;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .hero-video {
+    width: 100%;
+    height: auto;
+    min-height: 180px;
+    max-width: 100vw;
+  }
+}
+
+.course-overview ul,
+.what-you-will-learn ul,
+.hands-on-projects ul,
+.faq-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+.course-overview li,
+.what-you-will-learn .skill-item,
+.hands-on-projects li,
+.faq-section .faq-item {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.secondary-cta {
+  background: #fff;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.secondary-cta:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.course-curriculum .modules-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.module-card {
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+}
+.module-card h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.instructor-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.instructor-photo {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.social-proof .testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.social-proof blockquote {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-style: italic;
+}
+.stats-logos {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.stats span {
+  font-weight: 600;
+  color: #2563eb;
+}
+.logos span {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.pricing-details {
+  text-align: center;
+}
+.pricing-details h3 {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+.pricing-details ul {
+  margin-bottom: 1.5rem;
+}
+.enroll-btn {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.enroll-btn:hover {
+  background: #15803d;
+}
+
+.faq-section .faq-item strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.footer-cta {
+  text-align: center;
+  background: #f1f5f9;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+}
+.final-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.trust-badges span {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  background: #e0e7ef;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+// Responsive styles
+@media (max-width: 900px) {
+  .azure-ai-102-landing {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 0;
+  }
+  .course-curriculum .modules-list {
+    grid-template-columns: 1fr;
+  }
+  .instructor-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+} 

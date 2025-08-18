@@ -35,3 +35,161 @@
 		}
 	}
 }
+
+#mc_embed_signup {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#mc_embed_signup form {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+#mc_embed_signup input[type="email"],
+#mc_embed_signup input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+#mc_embed_signup .button {
+  width: auto;
+  min-width: 120px;
+}
+@media (max-width: 600px) {
+  #mc_embed_signup {
+    padding: 0 0.5rem;
+  }
+  #mc_embed_signup input[type="email"],
+  #mc_embed_signup input[type="text"] {
+    max-width: 100%;
+  }
+}
+
+.connect-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+  background: #fff;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.connect-btn:hover, .connect-btn:focus {
+  background: #000000;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.16);
+  border-color: #ff0000;
+}
+// Optional: Simple ripple effect
+.connect-btn:active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120%;
+  height: 120%;
+  background: rgba(37,99,235,0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: ripple 0.4s linear;
+  pointer-events: none;
+}
+@keyframes ripple {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(0.5); }
+  to { opacity: 0; transform: translate(-50%, -50%) scale(1.5); }
+}
+
+.training-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.training-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-height: 380px;
+}
+.training-card:hover {
+  box-shadow: 0 6px 32px rgba(37,99,235,0.12);
+  transform: translateY(-4px) scale(1.02);
+}
+.training-thumb {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background: #e0e7ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.training-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.training-info {
+  text-align: center;
+}
+.training-info h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.training-date {
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.enroll-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e11d48;
+  background: #fff;
+  border: 2px solid #e11d48;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(225,29,72,0.08);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+}
+.enroll-btn:hover, .enroll-btn:focus {
+  background: #e11d48;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(225,29,72,0.16);
+  border-color: #be123c;
+}
+@media (max-width: 600px) {
+  .training-cards {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .training-card {
+    padding: 1.25rem 0.5rem;
+    min-height: 320px;
+  }
+  .training-thumb {
+    width: 90px;
+    height: 90px;
+  }
+}

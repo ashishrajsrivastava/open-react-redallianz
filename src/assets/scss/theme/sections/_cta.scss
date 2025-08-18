@@ -13,7 +13,12 @@
 	background-image: url(../../../images/cta-illustration.svg);
 	background-repeat: no-repeat;
     background-size: cover;
-    background-position: right bottom;    
+    background-position: right bottom;
+    color: #ffffff; // Set text color to white
+
+    .cta-slogan h3 {
+        color: #ffffff !important; // Ensure the slogan text is white
+    }
 }
 
 @include media( '>medium' ) {
