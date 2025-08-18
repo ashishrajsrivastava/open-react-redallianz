@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
-import classNames from 'classnames';
 
 const DEFAULT_THUMB = require('../assets/images/illustration-section-01.svg');
 

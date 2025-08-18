@@ -6,7 +6,6 @@ import FeaturesTiles from '../components/sections/FeaturesTiles';
 import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
 import TrainingShowcase from '../components/sections/TrainingShowcase';
-import GenericSection from '../components/sections/GenericSection';
 
 const Home = () => {
 

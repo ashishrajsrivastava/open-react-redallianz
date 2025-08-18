@@ -16,7 +16,9 @@ const WhatYouWillLearn = () => (
     <h2>What You’ll Learn</h2>
     <ul>
       {skills.map((skill, idx) => (
-        <li key={idx} className="skill-item">🔹 {skill}</li>
+        <li key={idx} className="skill-item">
+          <span role="img" aria-label="diamond">🔹</span> {skill}
+        </li>
       ))}
     </ul>
   </section>

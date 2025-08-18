@@ -14,7 +14,9 @@ const HandsOnProjects = () => (
     <h2>Hands-on Projects & Labs</h2>
     <ul>
       {projects.map((proj, idx) => (
-        <li key={idx}>🛠️ {proj}</li>
+        <li key={idx}>
+          <span role="img" aria-label="tools">🛠️</span> {proj}
+        </li>
       ))}
     </ul>
     <p>Gain practical experience with real-world tools and scenarios.</p>
