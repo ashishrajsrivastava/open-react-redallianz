@@ -13,6 +13,7 @@ import ContactUs from './views/ContactUs';
 import AboutUs from './views/AboutUs';
 import AzureAI102Landing from './views/AzureAI102Landing';
 import LMSLanding from './views/LMSLanding';
+import PrivacyPolicy from './views/PrivacyPolicy';
 
 // Call config to load the environment variables
 dotenv.config();
@@ -49,6 +50,7 @@ const App = () => {
           <AppRoute exact path="/aboutus" component={AboutUs} layout={LayoutDefault} />
           <AppRoute exact path="/azure-ai-102" component={AzureAI102Landing} layout={LayoutDefault} />
           <AppRoute exact path="/lms" component={LMSLanding} layout={LayoutDefault} />
+          <AppRoute exact path="/privacy-policy" component={PrivacyPolicy} layout={LayoutDefault} />
         </Switch>
       )} />
   );
